@@ -16,10 +16,7 @@ const Quiz = () => {
               {quizState.questions.length}
             </div>
           </div>
-          <div
-            className="next-button"
-            onClick={() => dispatch({ type: "RESTART" })}
-          >
+          <div className="next-button" onClick={() => dispatch({ type: "RESTART" })}>
             Restart
           </div>
         </div>
@@ -31,10 +28,7 @@ const Quiz = () => {
             {quizState.questions.length}
           </div>
           <Question />
-          <div
-            className="next-button"
-            onClick={() => dispatch({ type: "NEXT_QUESTION" })}
-          >
+          <div className="next-button" onClick={() => dispatch({ type: "NEXT_QUESTION" })}>
             Next question
           </div>
         </div>
